@@ -1,0 +1,7 @@
+FROM openjdk
+
+WORKDIR /app
+
+COPY esmail.java .
+RUN javac esmail.java
+CMD java esmail
